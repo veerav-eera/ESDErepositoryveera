@@ -1,0 +1,33 @@
+extends ../layouts/user_layout.pug
+
+block content
+  main.pt-5
+        div.row
+            h1.col-sm-10.offset-sm-1.text-center Manage my submissions
+        div.row
+            div.card.offset-sm-3.col-sm-6
+                div.card-body
+                    //Form search
+                    form(id="searchDesignFormContainer")   
+                        div.form-row
+                            //Grid column
+                            div.offset-sm-2.col-sm-4.mb-4
+                                div.md-form
+                                    i.fa.searchengin.prefix.grey-text
+                                    input(type="text" id="searchInput" class="form-control")
+                                    label(for="searchInput") Search design title
+                            //Grid column
+                            div.col-sm-4.mt-4                                       
+                                div.text-left
+                                    button(id="submitButton" class="btn btn-primary btn-sm") 
+                                        | Search
+        div.row(id="buttonBlock")
+            div.offset-sm-4.col-sm-6.text-right(id="page1Button")
+                button.btn.btn-primary.btn-sm
+                      | 1
+                button.btn.btn-primary.btn-sm(id="page2Button")
+                      | 2
+                button.btn.btn-primary.btn-sm(id="page3Button")
+                      | 3
+        div.row
+            div.offset-sm-4.col-sm-6(id="dataBlock")

@@ -1,0 +1,40 @@
+.row {
+  .aside {
+    width: 100%;
+  }
+
+  .album-container {
+    width: 100%;
+
+    div {
+      width: 50%;
+
+      &:nth-of-type(1n+5) {display: none;}
+    }
+  }
+}
+
+form {
+  width: 100%;
+
+  .form-group {
+    label {
+      width: 100%;
+    }
+
+    input {
+      width: 100%;
+    }
+
+    &.error
+    {
+      label { color: red; }
+      input { border: 1px solid #f00; }
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+    }
+  }
+}

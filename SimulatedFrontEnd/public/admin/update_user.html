@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>B.D.S</title>
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap">
+    <!-- Bootstrap core CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <!-- Noty CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.css" rel="stylesheet">
+    <!-- Noty CSS Map-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.css.map" rel="stylesheet">
+    <!-- Noty CSS Map-->
+    <link href="/css/site.css" rel="stylesheet">
+    <script src="../js/AccessControl.js"></script>
+</head>
+
+
+<body onload="check('admin')">
+    <div class="container-fluid">
+        <!-- Navbar-->
+        <nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color">
+            <a class="navbar-brand" href="#"><img src="../images/logo.png" alt="Logo" style="width:40px;"></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link active" href="manage_users.html">Update user</a></li>
+                    <li class="nav-item active"><a class="nav-link active" href="check_user_submission.html">Check user submissions</a></li>
+                </ul>
+                <ul class="navbar-nav ml-auto nav-flex-icons">
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user"></i></a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbarDropdownMenuLink-333"><a class="dropdown-item" href="profile.html">My profile</a><a id="logoutButton" class="dropdown-item" href="#">Log out</a></div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- /.Navbar-->
+        <main>
+            <h2 class="text-center font-up font-bold blue-text py-4">Update user</h2>
+            <div class="row">
+                <!--Grid column-->
+                <div class="offset-md-2 col-md-8">
+                    <div class="card">
+                        <div class="card-body">
+                            <!--Form register-->
+                            <form id="updateUserFormContainer">
+
+                                <h4 class="card-title"><span id="fullNameOutput"></span></h4>
+                                <p class="card-text"><span id="emailOutput"></span></p>
+                                <select id="roleIdInput" class="browser-default custom-select"><option value="1">Administrator</option><option value="2">User</option></select>
+
+                                <div class="text-right"><button class="btn btn-secondary" id="backButton" type="button">Back</button>&nbsp;<button class="btn btn-primary" id="submitButton"> Submit</button></div>
+                                <input type="hidden" id="userRecordIdInput" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center darken-grey-text mb-4">
+                <h3 class="font-bold mb-3">About this interface: The administrator role can make changes to the role so that he can set another person as an administrator.</h3>
+            </div>
+    </div>
+    </main>
+    </div>
+    <!-- JQuery-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <!-- Noty JS-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+    <!-- Web App JS-->
+    <script src="/js/axios.js"></script>
+    <script src="/js/admin_update_user.js"></script>
+    <script src="/js/global.js"></script>
+</body>
+
+</html>

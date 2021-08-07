@@ -1,0 +1,52 @@
+doctype html
+html(lang="en")
+    head
+        title B.D.S
+      
+        // Font Awesome
+        link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.2/css/all.css')
+        // Google Fonts
+        link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap')
+        // Bootstrap core CSS
+        link(href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css' rel='stylesheet')
+        // Material Design Bootstrap
+        link(href='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css' rel='stylesheet')
+        // Noty CSS
+        link(href='https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.css' rel='stylesheet')
+        // Noty CSS Map
+        link(href='https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.css.map' rel='stylesheet')
+
+
+    body
+        div.container-fluid
+            // Navbar
+            nav.mb-1.navbar.navbar-expand-lg.navbar-dark.primary-color
+                a.navbar-brand(href="#") B.D.S
+                button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation")
+                    span.navbar-toggler-icon
+                #navbarSupportedContent-333.collapse.navbar-collapse
+                    ul.navbar-nav.mr-auto
+                        li.nav-item.active
+                            a.nav-link(href="/admin/manage-submission") Manage submission
+                            span.sr-only (current)
+                        li.nav-item
+                            a.nav-link(href="/admin/manage-user") Manage user
+                    ul.navbar-nav.ml-auto.nav-flex-icons
+                            a.nav-link(href="/logout") Logout
+            // /.Navbar
+
+        
+            block content
+
+        // JQuery
+        script(type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+        // Bootstrap tooltips
+        script(type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js')
+        // Bootstrap core JavaScript
+        script(type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js')
+        // MDB core JavaScript
+        script(type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js') 
+        // Noty JS
+        script(type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js') 
+        // Web App JS
+        script(src='/app.js')

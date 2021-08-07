@@ -1,0 +1,39 @@
+extends ../layouts/user_layout.pug
+
+block content
+    main
+        //Grid row
+        div.row
+            //Grid column
+            div.col-md-12.mb-4
+                div.card
+                    div.card-body
+                        //Form submit design
+                        form(id="submitDesignFormContainer")
+                            h2.text-center.font-up.font-bold.blue-text.py-4 Submit design
+                            div.md-form
+                                i.fa.fa-pencil-alt.prefix.grey-text
+                                input(type="text" id="designTitleInput" class="form-control")
+                                label(for="designTitleInput") Design title
+                            //--Textarea with icon prefix
+                            div.md-form
+                                i.fas.fa-pencil-alt.prefix.grey-text
+                                textarea(id="designDescriptionInput" class="md-textarea form-control" rows="3")
+                                label(for="designDescriptionInput") Design description
+
+                                
+                            div.md-form
+                                i.fa.fa-file-image.prefix.grey-text
+                                input(type="file" id="fileInput" name="fileInput" class="form-control" multiple)
+                                label(for="fileInput") 
+                            div.text-center
+                                button(id="submitButton" class="btn btn-primary") 
+                                    | Submit
+                                    
+
+        
+        hr.my-4
+          
+
+
+

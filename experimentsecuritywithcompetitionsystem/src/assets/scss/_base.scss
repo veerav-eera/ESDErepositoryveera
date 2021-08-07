@@ -1,0 +1,129 @@
+html {
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.container {
+  padding: 20px;
+}
+
+.row {
+  clear: both;
+
+  .aside {
+    width: 33%;
+    display: block;
+    float: left;
+    border: 2px solid #cdcdcd;
+    margin-bottom: 20px;
+
+    ul {
+      list-style: none;
+      padding-left: 20px;
+
+      li {
+        text-decoration: underline;
+        cursor: pointer;
+        text-transform: capitalize;
+        padding: 5px 0px;
+      }
+    }
+  }
+
+
+  .album-container {
+    width: 65%;
+    display: block;
+    float: right;
+    padding: 10px;
+    border: 2px solid #cdcdcd;
+    margin-bottom: 20px;
+
+    div {
+      width: 25%;
+      padding: 10px;
+      float: left;
+
+      img {
+        width: 100%;
+        cursor: pointer;
+      }
+    }
+
+  }
+}
+
+.full-image-container
+{
+  padding: 20px;
+  border: 2px solid #cdcdcd;
+  clear: both;
+
+
+  img {
+    width: 100%;
+  }
+}
+
+form {
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+
+  .alert {
+    background: #f2dede;
+    border: 1px solid #ebccd1;
+    color: #a94442;
+
+    margin: 20px 0px;
+    padding: 20px;
+  }
+
+  .form-group {
+
+    display: block;
+    width: 100%;
+    float: left;
+    margin-top: 10px;
+
+    label {
+      width: 25%;
+      display: block;
+      float: left;
+      padding: 10px 0px;
+    }
+
+    input {
+      width: 75%;
+      display: block;
+      float: left;
+      padding: 10px;
+      border: 1px solid #cdcdcd;
+    }
+
+    &.error
+    {
+      label { color: red; }
+      input { border: 1px solid #f00; }
+    }
+
+    button {
+      padding: 10px 40px;
+      float: right;
+    }
+  }
+}
+
+h1 {
+  a {
+    font-size: 14px;
+    padding-left: 20px;
+    color: #f00;
+  }
+}

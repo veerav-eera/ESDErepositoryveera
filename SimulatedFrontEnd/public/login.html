@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>[D]esign[C]competition</title>
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap">
+    <!-- Bootstrap core CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <!-- Noty CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.css" rel="stylesheet">
+    <!-- Noty CSS Map-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.css.map" rel="stylesheet">
+    <!-- App Site CSS-->
+    <link href="css/site.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- Navbar-->
+        <nav class="mb-1 navbar navbar-expand-lg navbar-dark primary-color">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="Logo" style="width:40px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link active" href="home.html">Home</a></li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav item"><a class="nav-link" href="login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- /.Navbar-->
+        <main>
+            <div class="row">
+                <!--Grid column-->
+                <div class="offset-md-2 col-md-8">
+                    <div class="card">
+                        <div class="card-body">
+                            <!--Form register-->
+                            <form id="loginFormContainer">
+                                <h2 class="text-center font-up font-bold blue-text py-4">Login</h2>
+                                <div class="md-form"><i class="fa fa-envelope prefix grey-text"></i><input class="form-control" type="text" id="emailInput"><label for="emailInput">Your email</label></div>
+                                <div class="md-form"><i class="fa fa-key prefix grey-text"></i><input class="form-control" type="password" id="passwordInput"><label for="passwordInput">Your password</label></div>
+                                <div class="text-center"><button class="btn btn-primary" id="submitButton"> Submit</button></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-left darken-grey-text offset-md-2 mb-4">
+                <h4 class="font-bold mb-3">
+                    <ul>
+                        <li>Public can register as a user</li>
+                        <li>The database has been <strong>seeded</strong> with user test data.</li>
+                        <li><b>user:</b>rita@designer.com <b>password:</b>password <br/> normal user role</li>
+                        <li><b>user:</b>robert@admin.com <b>password:</b>password <br/> admin user role</li>
+                        <li>Inspect the user table for more information on all the <b>seeded</b> user test records</li>
+                        <li>Use the SQL script <b>SQLScript_CreateDbAndTables_bee_competition_system_security_concept_db.sql</b> in the MySQL workbench to prepare a new database and necessary tables.</li>
+                        <li>Use <b>node seeddata.js</b> to run the script file to provide test data and test files at cloudinary. <br /><span class="text-danger">If you are recreating the database. Please drop the existing schema first. Also manually delete all the test files at Cloudinary.</span></li>
+                    </ul>
+
+
+                </h4>
+            </div>
+    </div>
+    </main>
+    </div>
+    <!-- JQuery-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <!-- Noty JS-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+    <!-- Web App JS-->
+    <script src="js/axios.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/global.js"></script>
+</body>
+
+</html>
